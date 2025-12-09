@@ -1,73 +1,108 @@
-# Final Python Project: Flashcard CLI App
+## Final Python Project
 
-## Overview
-A command-line flashcard app to help memorize and review topics efficiently. Uses CSV for storage, tracks progress, and offers interactive quizzes.
+# Flashcard Quiz App
 
-## Features
-1. **Add Flashcards**: Input topic, question, and answer  
-2. **Review Mode**: View all cards with stats  
-3. **Quiz Mode**: Randomized Q&A with performance tracking  
-4. **Stats**: View correct/incorrect counts and weak areas  
-5. **Auto Save**: Saves to CSV (option 5)  
-6. **Progress Tracking**: Tracks performance per card  
+A simple command-line flashcard application to help you study, quiz yourself, and track your learning progress.
 
-## Structure
-- `DocumentCSV.py`: Main script  
-- `flashcards.csv`: Data file  
+# Overview
 
-## Setup
-- Python 3.6+  
-- No external libraries  
+This Python-based CLI tool allows users to create, review, and quiz themselves on flashcards. It tracks correct and incorrect answers per card and provides performance statistics.
 
-**Run**: `python DocumentCSV.py`
+# Features
 
-## Menu Options
-```
-1. Add new flashcard  
-2. Review all flashcards  
-3. Start quiz  
-4. View statistics  
-5. Save and exit  
-6. Exit without saving  
-```
+ Add Flashcards: Input topic, question, and answer
+ Review Mode: View all flashcards with performance stats
+ Quiz Mode: Manually shuffled Q&A with scoring
+ Statistics: Track total attempts, correct/incorrect answers, and accuracy
+ Manual Shuffle: Deterministic shuffle without using random
+ Progress Tracking: Per-card performance tracking
 
-## Usage
-- **Add**: Enter topic, question, answer  
-- **Review**: View all cards and stats  
-- **Quiz**: Random questions, type answers, type `exit` to quit  
-- **Stats**: View performance summary  
-- **Save**: Use option 5 (auto-save not enabled)  
+# Structure
 
-## Architecture
+ flashcard_app.py: Main script containing all logic
+ No external files or libraries required
 
-### Flashcard Class
-- **Attributes**: topic, question, answer, correct, incorrect  
-- **Methods**: `to_list()`, `display(show_answer)`
+ # Setup
 
-### FlashcardApp Class
-- **Methods**: `load_flashcards()`, `save_flashcards()`, `add_flashcard()`, `review_all()`, `start_quiz()`, `show_stats()`, `run()`
+  Python 3.6 
 
-## CSV Format
-```
-topic,question,answer,correct,incorrect  
-Python,"What does PEP stand for?","Python Enhancement Proposal",5,2  
-Science,"H2O is?","Water",10,1  
-```
-- File: `flashcards.csv` (auto-created if missing)  
-- Encoding: UTF-8  
 
-## Future Ideas
-- Import/export  
-- Scoring system  
-- Image support  
-- GUI (Tkinter)  
-- Cloud sync  
+ # Run the App
+
+   project0.py
+
+# Menu Options
+
+1. Add Flashcard
+2. Review Flashcards
+3. Start Quiz
+4. Show Stats
+5. Exit
+
+# Usage
+
+Add Flashcard: Enter topic, question, and answer when prompted
+Review: Displays all flashcards with stats (correct/incorrect)
+Quiz: Presents shuffled questions; tracks your answers
+Stats: Shows total cards, attempts, correct/incorrect counts, and accuracy
+
+ 
+ # Code Architecture
+
+Class: Flashcard
+
+Attribute::
+
+Description
+
+topic:
+
+Subject or category of the card
+
+question:
+
+The question to be asked
+
+answer:
+
+The correct answer
+
+correct:
+
+Count of correct responses
+
+incorrect:
+
+Count of incorrect responses
+
+# Functions
+
+add_flashcard(deck)
+
+review_flashcards(deck)
+
+manual_shuffle(deck)
+
+start_quiz(deck)
+
+show_stats(deck)
+
+main()
+
+##  Future Enhancements
+
+CSV import/export
+
+Persistent storage
+
+GUI with Tkinter
+
+Cloud sync and backup
+
+Scoring and leaderboard system
 
 ## Conclusion
-A simple Python CLI flashcard tool for learning and revision.  
-**Happy Learning!** 🎓
 
-
-
-
-
+A simple basic functioning , oop concepts are applied for project.
+this is flashcard based on command based interface working .
+on progress .
